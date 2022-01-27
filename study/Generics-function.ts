@@ -46,3 +46,11 @@ const test2 = <K extends string | number>(num: K) => {
   num.valueOf();
   return { id: num };
 };
+
+function Test<T extends string, K = number ,U> {
+  return {"t": T , 123: K ,u: U};
+}
+
+const test = () => {
+
+}
