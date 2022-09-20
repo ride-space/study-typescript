@@ -1,5 +1,7 @@
 // keyof のサンプル
 
+import { type } from "os";
+
 // export type Obj = {
 //   foo: string;
 //   bar: number;
@@ -33,3 +35,5 @@ function test (x: Key): void {
 }
 
 test(111);
+
+
