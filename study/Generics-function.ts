@@ -1,7 +1,7 @@
 // 関数でジェネリクスを使う場合は引数の()の前に<>を書く
 
 // 関数
-function foo<T>(arg: T) {
+export function foo<T>(arg: T) {
   return { value: arg };
 }
 
@@ -46,11 +46,3 @@ const test2 = <K extends string | number>(num: K) => {
   num.valueOf();
   return { id: num };
 };
-
-function Test<T extends string, K = number ,U> {
-  return {"t": T , 123: K ,u: U};
-}
-
-const test = () => {
-
-}
